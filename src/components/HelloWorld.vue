@@ -1,10 +1,10 @@
 <template>
-  <div class="interact-page">
+  <!-- 测试demo -->
+  <!-- <div class="interact-page">
     <div class="main-item">
       <div class="top">
           <img class="user-avatar" src="../assets/logo.png" alt="">
         <span class="zyb">某产品</span>
-        <!-- <span class="dot">.</span> -->
         <span class="count">累计完成<span class="num">6</span>次玩耍</span>
       </div>
       <div class="bottom">
@@ -41,6 +41,11 @@
         </div>
       </div>
     </div>
+  </div> -->
+
+  <!-- 设计稿是640px，有一个红色盒子宽高都是320px，里面的文字是28px，那么下面是这个例子的代码, 注意需要修改设计稿配置viewportWidth: 640 -->
+  <div class="index-page">
+    <span class="title">我是标题</span>
   </div>
 </template>
 
@@ -57,12 +62,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="less" scoped>
+  // 测试demo
   .interact-page {
     .main-item {
       margin: 20px;
       padding: 24px;
       border-radius:8px;
-      // box-shadow:0px 2px 15px 0px rgba(0,0,0,0.06);
       box-shadow: 2px 2px 15px rgba(0,0,0,0.1);
       .top {
         .user-avatar {
@@ -78,10 +83,6 @@ export default {
           color: #333333;
           vertical-align: middle;
         }
-        /* .dot {
-          padding: 0 10px 0 20px;
-          vertical-align: middle;
-        } */
         .count {
           font-size: 24px;
           color: #999999;
@@ -145,5 +146,14 @@ export default {
         }
       }
     }
+  }
+
+  .index-page {
+    width: 320px;
+    height: 320px;
+    background: red
+  }
+  .title {
+    font-size: 28px;
   }
 </style>
