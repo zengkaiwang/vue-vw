@@ -50,7 +50,7 @@
 </template>
 
 <script>
-import Util from '../utils/util'
+// import Util from '../utils/util'
 
 export default {
   name: 'HelloWorld',

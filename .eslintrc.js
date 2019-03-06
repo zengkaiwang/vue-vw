@@ -26,6 +26,14 @@ module.exports = {
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     // 禁止出现未使用过的变量
-    // 'no-unused-vars': 0
+    // 'no-unused-vars': 0,
+    // 三等号
+    'eqeqeq': 0,
+    //方法名和刮号之间需要有一格空格
+    "space-before-function-paren": 0,
+    // js语句结尾必须使用分号
+    'semi': ['off', 'always'],
+    //不能用多余的空格
+    "no-multi-spaces": 1
   }
 }
