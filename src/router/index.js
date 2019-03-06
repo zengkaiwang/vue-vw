@@ -10,7 +10,7 @@ export default new Router({
   routes: [
     {
       path: '/',
-      redirect: '/doExercise'
+      redirect: '/exercise'
     },
     {
       path: '/answer',
@@ -23,7 +23,7 @@ export default new Router({
       component: Result
     },
     {
-      path: '/doExercise',
+      path: '/exercise',
       name: 'doExercise',
       component: DoExercise
     }

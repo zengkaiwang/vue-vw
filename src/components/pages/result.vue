@@ -44,7 +44,7 @@ export default {
       // wx.miniProgram.navigateTo({url:'/pages/index/main'});
       // wx.miniProgram.redirectTo({url:'/pages/course/main'});
       // wx.miniProgram.reLaunch({url:'/pages/course/main'});
-      wx.miniProgram.navigateBack({url:'/pages/course/main'});
+      wx.miniProgram.navigateBack({url:'/pages/exercise/main'});
     }
   }
 }
