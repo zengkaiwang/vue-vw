@@ -1,6 +1,6 @@
 <template>
   <div class="doexercise-page">
-    <div class="btn" @click="gotoAnswer">
+    <div @click="gotoAnswer">
       doexercise page 提交跳转到结果页
     </div>
 

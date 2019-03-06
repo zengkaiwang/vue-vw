@@ -1,7 +1,7 @@
 <template>
   <div class="result-page">
     result page
-    <div class="btn" @click="gotoAnswer">
+    <div @click="gotoAnswer">
        提交跳转到结果页
     </div>
   </div>
