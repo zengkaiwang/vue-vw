@@ -8,23 +8,28 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
+import wx from 'weixin-js-sdk';
 
-      }
-    },
-    methods: {
-      gotoAnswer() {
-        this.$router.push({
-          path: '/answer',
-          query: {
-            id: 12121
-          }
-        });
-      }
+export default {
+  data() {
+    return {
+
+    }
+  },
+  created() {
+    console.log('wx', wx)
+  },
+  methods: {
+    gotoAnswer() {
+      this.$router.push({
+        path: '/answer',
+        query: {
+          id: 12121
+        }
+      });
     }
   }
+}
 </script>
 
 <style lang="less" scoped>
