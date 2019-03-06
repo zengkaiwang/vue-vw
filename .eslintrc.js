@@ -34,6 +34,8 @@ module.exports = {
     // js语句结尾必须使用分号
     'semi': ['off', 'always'],
     //不能用多余的空格
-    "no-multi-spaces": 1
+    "no-multi-spaces": 1,
+    //一行结束后面不要有空格
+    // "no-trailing-spaces": 1
   }
 }
