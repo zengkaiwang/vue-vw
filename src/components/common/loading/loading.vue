@@ -3,12 +3,20 @@
   <!-- <div class="loading">
     <div class="donut"></div>
   </div> -->
+
   <!-- 方案二 -->
   <!-- <div class="donut"></div> -->
+
   <!-- 方案三 -->
-  <img :style="{ bottom: data.bottom + 'px'}"
+  <!-- <img :style="{ bottom: data.bottom + 'px'}"
+    class="loading-icon"
+    src="@/assets/loading@2x.png" alt=""> -->
+
+  <!-- 方案四 -->
+  <img v-if="showWrap"
     class="loading-icon"
     src="@/assets/loading@2x.png" alt="">
+
 </template>
 
 <script>

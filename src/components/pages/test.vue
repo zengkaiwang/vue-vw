@@ -4,17 +4,19 @@
     <!-- <toast></toast> -->
 
     <!-- toast弹框方案二 -->
-    <input type="button" value="显示弹窗" @click="showToast">
+    <!-- <input type="button" value="显示弹窗" @click="showToast"> -->
 
     <!-- loading组件 -->
     <!-- <loading :data="loadParams"></loading> -->
+
+    <!-- 动态加载loading组件方案 -->
+    <input type="button" value="动态加载显示loading组件" @click="showLoading">
   </div>
 </template>
 
 <script>
 // import toast from '../common/toast/toast';
 // import loading from '../common/loading/loading';
-// import toastRegistry from '@/components/common/toast/index'
 
 export default {
   // components: {toast, loading},
@@ -28,6 +30,9 @@ export default {
   methods: {
     showToast () {
       this.$toast('我是弹出消息', 1000)
+    },
+    showLoading () {
+      this.$showLoading();
     }
   }
 

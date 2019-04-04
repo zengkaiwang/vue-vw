@@ -6,7 +6,10 @@ import router from './router'
 import '@/style/global.less'
 
 import toastRegistry from '@/components/common/toast/index'
+import registryLoading from '@/components/common/loading/index'
+
 Vue.use(toastRegistry);
+Vue.use(registryLoading);
 
 Vue.config.productionTip = false
 
