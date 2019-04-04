@@ -5,6 +5,9 @@ import App from './App'
 import router from './router'
 import '@/style/global.less'
 
+import toastRegistry from '@/components/common/toast/index'
+Vue.use(toastRegistry);
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
