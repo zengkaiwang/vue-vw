@@ -11,7 +11,7 @@
       <!-- 设计稿是640px，有一个红色盒子宽高都是320px，里面的文字是28px，那么下面是这个例子的代码, 注意需要修改设计稿配置viewportWidth: 640 -->
       <div class="index-page">
         <span class="title">我是标题</span>
-      </div>    
+      </div>
     </div>
 
     <div class="doexercise-bottom">
@@ -39,12 +39,12 @@ export default {
         }
       });
     },
-    //跳转到小程序页面
+    // 跳转到小程序页面
     gotoApplet() {
       // wx.miniProgram.navigateTo({url:'/pages/index/main'});
       // wx.miniProgram.redirectTo({url:'/pages/course/main'});
       // wx.miniProgram.reLaunch({url:'/pages/course/main'});
-      wx.miniProgram.navigateBack({url:'/pages/exercise/main'});
+      wx.miniProgram.navigateBack({url: '/pages/exercise/main'});
     }
   }
 };
