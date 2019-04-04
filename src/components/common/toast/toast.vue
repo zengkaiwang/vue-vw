@@ -6,7 +6,7 @@
   .wrap{
     position: fixed;
     left: 50%;
-    top:50%;
+    top: 20%;
     background: rgba(0,0,0,.35);
     padding: 10px;
     border-radius: 5px;
