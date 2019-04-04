@@ -17,6 +17,8 @@
 <script>
 // import toast from '../common/toast/toast';
 // import loading from '../common/loading/loading';
+// 非全局挂载按需加载loadong组件
+import { showLoading, hideLoading } from '@/components/common/loading/index';
 
 export default {
   // components: {toast, loading},
@@ -32,7 +34,12 @@ export default {
       this.$toast('我是弹出消息', 1000)
     },
     showLoading () {
-      this.$showLoading();
+      // this.$showLoading();
+      showLoading();
+      setTimeout(() => {
+        // this.$hideLoading();
+        hideLoading();
+      }, 1000);
     }
   }
 
