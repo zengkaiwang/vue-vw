@@ -7,13 +7,16 @@ import toastComponent from './toast.vue'
 const ToastConstructor = vue.extend(toastComponent)
 
 // 定义弹出组件的函数 接收2个参数, 要显示的文本 和 显示时间
-function showToast(text, duration = 2000) {
+function showToast(text, score, iconUrl, duration = 2000) {
+  console.log('index.js', iconUrl);
   // 实例化一个 toast.vue
   const toastDom = new ToastConstructor({
     el: document.createElement('div'),
     data() {
       return {
         text: text,
+        score: score,
+        iconUrl: iconUrl,
         showWrap: true,
         showContent: true
       }

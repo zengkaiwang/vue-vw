@@ -1,8 +1,24 @@
 <template>
-  <div class="wrap" v-if="showWrap" :class="showContent ?'fadein':'fadeout'">{{text}}</div>
+  <div class="wrap" v-if="showWrap" :class="showContent ?'fadein':'fadeout'">
+    <span>{{text}}</span>
+    <span class="score">{{score}}</span>
+    <img v-if="iconUrl"
+      class="toast-icon"
+      src="@/assets/score@2x.png" alt="">
+      <!-- :src="iconUrl" alt=""> -->
+  </div>
 </template>
 
-<style scoped>
+<script>
+export default {
+  created() {
+    console.log("toast.vue", this.iconUrl);
+  }
+}
+</script>
+
+
+<style lang="less" scoped>
   .wrap{
     position: fixed;
     left: 50%;
@@ -12,6 +28,18 @@
     border-radius: 5px;
     transform: translate(-50%,-50%);
     color:#fff;
+    span  {
+      vertical-align: middle;
+    }
+    .score {
+      color: #FB7F2D;
+    }
+    .toast-icon {
+      width: 40px;
+      height: 40px;
+      margin-left: 12px;
+      vertical-align: middle;
+    }    
   }
   .fadein {
     animation: animate_in 0.25s;

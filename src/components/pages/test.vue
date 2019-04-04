@@ -4,7 +4,7 @@
     <!-- <toast></toast> -->
 
     <!-- toast弹框方案二 -->
-    <!-- <input type="button" value="显示弹窗" @click="showToast"> -->
+    <input type="button" value="显示弹窗" @click="showToast">
 
     <!-- loading组件 -->
     <!-- <loading :data="loadParams"></loading> -->
@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     showToast () {
-      this.$toast('我是弹出消息', 1000)
+      this.$toast('我是弹出消息', '+5', './assets/score@2x.png', 1000)
     },
     showLoading () {
       // this.$showLoading();
