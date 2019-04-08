@@ -31,8 +31,12 @@ export default {
   },
   methods: {
     showToast () {
-      this.$toast('我是弹出消息', '+5', require('@/assets/score@2x.png'), 1000);
-      // this.$toast('我是弹出消息', '+5', '@/assets/score@2x.png', 1000);
+      this.$toast({
+        mgs: '奖励分数',
+        score: '+6',
+        imgUrl: require('@/assets/score@2x.png'),
+        duration: 1000
+      });
     },
     // showLoading () {
     //   // this.$showLoading();

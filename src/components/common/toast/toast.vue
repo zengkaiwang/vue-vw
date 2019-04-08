@@ -1,18 +1,15 @@
 <template>
   <div class="wrap" v-if="showWrap" :class="showContent ?'fadein':'fadeout'">
-    <span>{{text}}</span>
+    <span>{{mgs}}</span>
     <span class="score">{{score}}</span>
-    <img v-if="iconUrl"
+    <img v-if="imgUrl"
       class="toast-icon"
-      :src="iconUrl" alt=""/>
+      :src="imgUrl" alt=""/>
   </div>
 </template>
 
 <script>
 export default {
-  created() {
-    // console.log('toast.vue', this.iconUrl);
-  }
 }
 </script>
 
