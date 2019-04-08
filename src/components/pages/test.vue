@@ -31,12 +31,13 @@ export default {
   },
   methods: {
     showToast () {
-      this.$toast({
-        mgs: '奖励分数',
-        score: '+6',
-        imgUrl: require('@/assets/score@2x.png'),
-        duration: 1000
-      });
+      // this.$toast({
+      //   mgs: '奖励分数',
+      //   score: '+6',
+      //   imgUrl: require('@/assets/score@2x.png'),
+      //   duration: 1000
+      // });
+      this.$toast();
     },
     // showLoading () {
     //   // this.$showLoading();

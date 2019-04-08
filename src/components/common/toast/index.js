@@ -7,16 +7,20 @@ import toastComponent from './toast.vue'
 const ToastConstructor = vue.extend(toastComponent)
 
 // 定义弹出组件的函数 接收2个参数, 要显示的文本 和 显示时间
-function showToast(params) {
-  let duration = params.duration ? params.duration : 2000;
+function showToast({
+  mgs = '奖励分数11',
+  score = '+3',
+  imgUrl = require('@/assets/score@2x.png'),
+  duration = 2000
+} = {}) {
   // 实例化一个 toast.vue
   const toastDom = new ToastConstructor({
     el: document.createElement('div'),
     data() {
       return {
-        mgs: params.mgs ? params.mgs : '',
-        score: params.score ? params.score : '',
-        imgUrl: params.imgUrl ? params.imgUrl : '',
+        mgs: mgs,
+        score: score,
+        imgUrl: imgUrl,
         showWrap: true,
         showContent: true
       }
