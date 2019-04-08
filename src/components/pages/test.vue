@@ -10,7 +10,7 @@
     <!-- <loading :data="loadParams"></loading> -->
 
     <!-- 动态加载loading组件方案 -->
-    <input type="button" value="动态加载显示loading组件" @click="showLoading">
+    <!-- <input type="button" value="动态加载显示loading组件" @click="showLoading"> -->
   </div>
 </template>
 
@@ -18,7 +18,7 @@
 // import toast from '../common/toast/toast';
 // import loading from '../common/loading/loading';
 // 非全局挂载按需加载loadong组件
-import { showLoading, hideLoading } from '@/components/common/loading/index';
+// import { showLoading, hideLoading } from '@/components/common/loading/index';
 
 export default {
   // components: {toast, loading},
@@ -31,16 +31,17 @@ export default {
   },
   methods: {
     showToast () {
-      this.$toast('我是弹出消息', '+5', './assets/score@2x.png', 1000)
+      this.$toast('我是弹出消息', '+5', require('@/assets/score@2x.png'), 1000);
+      // this.$toast('我是弹出消息', '+5', '@/assets/score@2x.png', 1000);
     },
-    showLoading () {
-      // this.$showLoading();
-      showLoading();
-      setTimeout(() => {
-        // this.$hideLoading();
-        hideLoading();
-      }, 1000);
-    }
+    // showLoading () {
+    //   // this.$showLoading();
+    //   showLoading();
+    //   setTimeout(() => {
+    //     // this.$hideLoading();
+    //     hideLoading();
+    //   }, 1000);
+    // }
   }
 
 }

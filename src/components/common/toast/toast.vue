@@ -4,19 +4,17 @@
     <span class="score">{{score}}</span>
     <img v-if="iconUrl"
       class="toast-icon"
-      src="@/assets/score@2x.png" alt="">
-      <!-- :src="iconUrl" alt=""> -->
+      :src="iconUrl" alt=""/>
   </div>
 </template>
 
 <script>
 export default {
   created() {
-    console.log("toast.vue", this.iconUrl);
+    // console.log('toast.vue', this.iconUrl);
   }
 }
 </script>
-
 
 <style lang="less" scoped>
   .wrap{
@@ -39,7 +37,7 @@ export default {
       height: 40px;
       margin-left: 12px;
       vertical-align: middle;
-    }    
+    }
   }
   .fadein {
     animation: animate_in 0.25s;
