@@ -38,7 +38,7 @@ export default {
       //   duration: 1000
       // });
       this.$toast();
-    },
+    }
     // showLoading () {
     //   // this.$showLoading();
     //   showLoading();

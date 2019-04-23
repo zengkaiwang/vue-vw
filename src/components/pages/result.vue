@@ -8,7 +8,7 @@
     <!-- 小程序交互 -->
     <div class="item" @click="jumpbtn">点击跳转到小程序</div>
     <div class="item choose-image">测试sdk的拍照</div>
-    <div class="item postdata">h5传递message给小程序</div>    
+    <div class="item postdata">h5传递message给小程序</div>
   </div>
 </template>
 
@@ -22,12 +22,12 @@ export default {
     }
   },
   created() {
-    console.log("wx.miniProgram", wx.miniProgram);
-    console.log("wx", wx);
+    console.log('wx.miniProgram', wx.miniProgram);
+    console.log('wx', wx);
 
-    //判断小程序环境
+    // 判断小程序环境
     wx.miniProgram.getEnv(function (res) {
-      console.log("res.miniprogram", res.miniprogram) // true
+      console.log('res.miniprogram', res.miniprogram) // true
     })
   },
   methods: {
@@ -39,12 +39,12 @@ export default {
         }
       });
     },
-    //跳转到小程序页面
+    // 跳转到小程序页面
     jumpbtn() {
       // wx.miniProgram.navigateTo({url:'/pages/index/main'});
       // wx.miniProgram.redirectTo({url:'/pages/course/main'});
       // wx.miniProgram.reLaunch({url:'/pages/course/main'});
-      wx.miniProgram.navigateBack({url:'/pages/exercise/main'});
+      wx.miniProgram.navigateBack({url: '/pages/exercise/main'});
     }
   }
 }
